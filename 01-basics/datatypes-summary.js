@@ -191,3 +191,6 @@ console.log(userTwo.email)
 
 //simply stack ke anadar aapko copy mailta hai aur heap ke anadar aapko reference milta hai.
 //refernce ka matlab ap jo bhi changes krenge wo original value mein hoga
+
+
+//Reason For Commit:TO make personal commit of this topic for future reference

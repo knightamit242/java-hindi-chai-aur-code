@@ -48,7 +48,7 @@ let stringNumber=String(anynumber)
 //console.log(stringNumber)
 //console.log(typeof(stringNumber))
 
-//*************************************** Operations ****************************************//
+//************************************Operations ****************************************//
 
 let value=3
 let negValue=-value

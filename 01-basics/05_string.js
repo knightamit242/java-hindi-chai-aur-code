@@ -61,9 +61,42 @@ const stringNewOne="      amit"
 
 const url="htttps://Amit.com/Amit%20singh"
 
-console.log(url.replace('%','-'))
-console.log(url.includes('Amit'))
-console.log(url.includes('Satyam'))
+//console.log(url.replace('%','-'))
+//console.log(url.includes('Amit'))
+//console.log(url.includes('Satyam'))
+
+
 
 //split//
 
+//1//
+// const newStr= "Amit"
+// console.log(newStr.split(" "))
+
+// const newStr2= "Amit"
+// console.log(newStr.split("")) 
+
+//2//
+//const newStr3="My name is Amit Singh"
+//console.log(newStr3.split(""))
+
+//const newStr4="My name is Amit Singh"
+//console.log(newStr4.split(" "))
+
+//3//
+// const newStr5=newStr4.replaceAll(" ","")
+// console.log(newStr5)
+// console.log(newStr5.split(""))  //AGAR SPACE HATANA HO TO YE EK WAY HAI
+
+//4//
+//const ekStr="html,css,javascript"
+//console.log(ekStr.split(","))
+
+//5//
+const ekStr2="a-b-c-d-e"
+console.log(ekStr2.split('-',3))
+
+//6//
+const ekStr3="a-b-c-d-e"
+console.log(ekStr3.split('-',-4)) //SPLIT KRKE POORI VALUE DE DEGA WAISE HE
+//***NEGATIVE VALUE SPLIT LIMIT ME NHI LEGA TO COMME KE HISAB SE SEPARATE KR DEGA BAS *//

@@ -78,10 +78,10 @@ const url="htttps://Amit.com/Amit%20singh"
 
 //2//
 //const newStr3="My name is Amit Singh"
-//console.log(newStr3.split(""))
+//console.log(newStr3.split(""))   //har character par string toot jaayegi
 
 //const newStr4="My name is Amit Singh"
-//console.log(newStr4.split(" "))
+//console.log(newStr4.split(" "))  //har space par string toot jaayegi
 
 //3//
 // const newStr5=newStr4.replaceAll(" ","")
@@ -100,3 +100,38 @@ console.log(ekStr2.split('-',3))
 const ekStr3="a-b-c-d-e"
 console.log(ekStr3.split('-',-4)) //SPLIT KRKE POORI VALUE DE DEGA WAISE HE
 //***NEGATIVE VALUE SPLIT LIMIT ME NHI LEGA TO COMME KE HISAB SE SEPARATE KR DEGA BAS *//
+
+//split() JavaScript की String method है।
+
+//इसका काम एक string को कई टुकड़ों (parts) में तोड़कर array बनाना है।
+
+//Syntax
+//string.split(separator)
+
+//OR
+
+//string.split(separator, limit)
+//separator → किस चीज़ को देखकर string को तोड़ना है
+//limit → अधिकतम कितने elements चाहिए
+
+
+
+//7//*****************REPLACE//
+//replace() vs replaceAll()
+
+
+// const str = "Hi Hi Hi";
+// replace()
+// console.log(str.replace("Hi", "Hello"));
+
+// Output:
+// Hello Hi Hi
+
+// केवल पहला "Hi" बदला।
+
+// replaceAll()
+// console.log(str.replaceAll("Hi", "Hello"));
+
+// Output:
+// Hello Hello Hello
+// सभी "Hi" बदल गए।

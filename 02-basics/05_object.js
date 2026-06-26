@@ -21,19 +21,51 @@
 // }
 
 //1.11//
-// const {instructorName}= course // EK BAAR YE DEFINE KR DO... PHIR BAAR-2 .instructorName NHI LIKHNA PADEGA
-
+// const {instructorName}= course         
 // console.log(instructorName) // OUTPUT:Hitesh Sir 
+
+//EK BAARconst {instructorName}=course  DEFINE KR DO... PHIR BAAR-2 .instructorName NHI LIKHNA PADEGA
+
+// OBJECT DESTRUCTURING SE PROPERTY KI VALUE DIRECT VARIABLE ME AA JATI HAI
+
+
+//CONCEPT:
+// const { KEY } = OBJECT
+
+// OBJECT KE ANDAR SE KEY KI VALUE NIKAAL KAR
+// USI NAAM KA VARIABLE BANA DETA HAI.
+
+
+//YAAD KARNE KA TARIKA
+// const { instructorName } = course
+
+// Pehle
+// console.log(course.instructorName)
+
+// Yahan course object ke andar se instructorName nikal rahe ho.
+
+// Destructuring mein
+// const { instructorName } = course
+
+// Matlab:
+// COURSE OBJECT KE ANDAR SE instructorName NIKAAL KAR
+// EK VARIABLE instructorName BANA DO.
+
+// Internally ye lagbhag aisa hai:
+
+// const instructorName = course.instructorName
 
 
 //1.12//
 // const {instructorName:ins}= course // ins=> AB AUR CHOTA HO GYA... WILL SAVE TIME AND USED IN REACT
-
 // console.log(ins)
 
+// ALIAS (DUSRA/SHORT NAAM) DIYA GAYA HAI
+// instructorName KI VALUE AB ins VARIABLE ME STORE HOGI
 
-// OBJECT KO DESTRUCTURE KRNA ISSE BOLTE HAI
-// USED IN REACT
+
+// IS PROCESS KO OBJECT DESTRUCTURING BOLTE HAIN
+// REACT ME BHI BAHUT USE HOTA HAI
 
 
 
@@ -49,7 +81,7 @@
 
 // JSON = JAVASCRIPT OBJECT NOTATION
 
-// JSON OBJECT JAISA DIKHTA HAI.
+// // JSON OBJECT JAISA DIKHTA HAI LEKIN YE STRING FORMAT ME DATA HOTA HAI
 
 // JSON ME KEYS DOUBLE QUOTES ME HOTI HAIN.
 

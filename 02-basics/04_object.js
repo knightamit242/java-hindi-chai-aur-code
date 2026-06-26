@@ -3,11 +3,10 @@
 // const tinderUser= new Object()
 // console.log(tinderUser)  //SINGELTON OBJECT
 
-//OUTPUT WILL BE SAME IN BOTH THE CASES
+// // OUTPUT WILL BE SAME IN BOTH THE CASES
 
 // const instaUser= {}
 // console.log(instaUser)  //NON-SINGELTON OBJECT
-
 
 
 
@@ -18,7 +17,7 @@
 // instaUser.id="knight123"
 // instaUser.name= "Amit Singh"
 // instaUser.isLoggedIn= false
-
+    
 // console.log(instaUser)
 
 
@@ -61,7 +60,7 @@
 // obj3= Object.assign({},obj1,obj2) // {} USE KARNE SE ORIGINAL OBJECTS MODIFY NAHI HOTE.
 // console.log(obj3)
 
-// OBJECT.ASSIGN() OBJECTS KO MERGE KARNE KE LIYE USE HOTA HAI.
+// Object.assign() OBJECTS KO MERGE KARNE KE LIYE USE HOTA HAI.
 
 // SYNTAX: Object.assign(target, source1, source2)
 // {} EK NAYA EMPTY OBJECT HAI JISME DATA COPY HOGA.
@@ -93,6 +92,8 @@
 // const obj3= {...obj1,...obj2} // EASIEST and MOST USED
 
 // console.log(obj3)
+// console.log({...obj1,...obj2})
+
 
 
 
@@ -145,23 +146,23 @@
 
 //6// ACCESSING ALL VALUES OR ALL KEYS OF OBJECT
 
-const user= {
+// const user= {
 
-    "full name":"Amit Singh",
-    name: "Amit",
-    "age": 22,   
-    highSchoolPassAge: 15,
-    "location": "Deoria",
-    email: "singhamit79449@gmail.com",
-    isLoggedIn: false
+//     "full name":"Amit Singh",
+//     name: "Amit",
+//     "age": 22,   
+//     highSchoolPassAge: 15,
+//     "location": "Deoria",
+//     email: "singhamit79449@gmail.com",
+//     isLoggedIn: false
 
-}
+// }
 
-console.log(Object.keys(user))   // SAARE KEY DE DEGA 
-console.log(Object.values(user))  // SAARE VALUES DE DEGA
+// console.log(Object.keys(user))   // SAARE KEY DE DEGA 
+// console.log(Object.values(user))  // SAARE VALUES DE DEGA
 
-console.log(Object.entries(user)) //OBJECT KI SAARI ENTRIES DE DEGA...
+// console.log(Object.entries(user)) //OBJECT KI SAARI ENTRIES DE DEGA...
 
-//AGAR HAME DEKHNA HAI KOI KEY HAI YA NHI OBJECT MEIN
-console.log(user.hasOwnProperty("isLoggedIn")); //true dega
+// //AGAR HAME DEKHNA HAI KOI KEY HAI YA NHI OBJECT MEIN
+// console.log(user.hasOwnProperty("isLoggedIn")); //true dega
 

@@ -89,7 +89,7 @@
 
 // let data = 10;
 
-// Variable data Number nahi hai.
+//  data(Variable) Number nahi hai.
 
 // Uske andar jo value hai (10) wo Number hai.
 
@@ -114,13 +114,14 @@ const bigNumber=BigInt(123456789012345678901234567890)
 
 // 2. Non-primitive data types or reference data types
 // types of non-primitive data types : array, object and function
-//ye all 3 non-primitive ka datatype object  hota hai aur function ka object function hota hai  
-
+// ARRAY KA typeof => "object"
+// OBJECT KA typeof => "object"
+// FUNCTION KA typeof => "function"
 
 //=>Array  
 // array ke andar kisi bhi type ka data store kar sakte hai
 const heros=["shaktiman","doga","nagraj"];
-//console.log(typeof heros) //=>Object
+//console.log(typeof heros) //=> "object"
 
 
 
@@ -132,21 +133,26 @@ const person = {
     city:"Delhi"
 }
 
-//console.log(typeof person) //=>Object
+//console.log(typeof person) //=>"object"
 
 
 //=>Function:
 const myFunction = function() {
     // Function body
 }
-//console.log(typeof myFunction)
+console.log(typeof myFunction)
 
 
 
 
 //**************************************STACK and HEAP ************************** *//
-//primitives data types are stored in stack memory and non-primitive data types are stored in heap memory. 
+//primitives data types are stored in stack memory
+//  and non-primitive data types are stored in heap memory. 
 
+
+// PRIMITIVE VALUES COPY-BY-VALUE KI TARAH BEHAVE KARTI HAIN
+// NON-PRIMITIVE VALUES REFERENCE SHARE KAR SAKTI HAIN          //YE LINE INTERVIEW KE LIYE HAI BSS...
+                                                                // THODA PROFESSIONAL...🤣
 
 //stack & Primitive
 
@@ -189,7 +195,7 @@ console.log(userTwo.email)
 //=>hindi me bole to, non-primitive data types heap memory mein store hote hain aur jab hum ek non-primitive value ko dusre variable ko assign karte hain, to wo us memory location ka reference bana kr usse deta hai... mtlab dono variable same memory location ko point krte hain... isliye jab hum dusre variable ki value change karte hain, to wo pehle variable ko affect karta hai kyunki wo dono same memory location ko point krte hain.
 
 
-//simply stack ke anadar aapko copy mailta hai aur heap ke anadar aapko reference milta hai.
+//simply stack ke anadar aapko copy mailta hai aur heap ke anadar aapko same reference milta hai.
 //refernce ka matlab ap jo bhi changes krenge wo original value mein hoga
 
 

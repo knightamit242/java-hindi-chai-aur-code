@@ -14,7 +14,7 @@
 //console.log(date2.getFullYear()) //current year output dega
 
 //CONCEPT=> date object mein bohot saare method store hote hai... to 
-//date2.getFullYear()=> new Date() ne jo gate object banaya hai usme .getFullYear() method ko dhhodega aur phir milne ke baad usko execute kr dega
+//date2.getFullYear()=> new Date() ne jo Date object banaya hai usme .getFullYear() method ko dhhodega aur phir milne ke baad usko execute kr dega
 
 //Date() object nhi banata... current date and time return krta hai only... jiska type string hota hai
 
@@ -49,10 +49,10 @@
 // console.log(myGivenDate.toString())       
 
 //3.3//another format to pass date
-// let myGivenDate= new Date("2026-01-24") // pehla Date format yyyy/mm/dd
-// console.log(myGivenDate.toString());
+// let myGivenDate= new Date("2026-01-24") // pehla Date format yyyy-mm-dd //IS FORMAT MEIN MONTH 1 SE 
+// console.log(myGivenDate.toDateString());                             //START HO RHA HAI
 
-// let myGivenDate= new Date("01-24-2026")    // Doosra Date format mm/dd/yyyy
+// let myGivenDate= new Date("01-24-2026")    // Doosra Date format mm-dd-yyyy
 // console.log(myGivenDate.toString());
 
 //3.4//Timestamps
@@ -90,12 +90,11 @@
 // console.log(typeof myTimeStamp)
 
 
-//3.4.4//     //Date.now()= new Date() SE TIMESTAMP NIKALNA APPROX EQUAL HOTA HAI.. YAHA 11MS KA DIFFERENCE HAI
-// let myTimeStamp1 =Date.now()
-// console.log(myTimeStamp1)
-// let myTimeStamp2= new Date()
-// console.log(myTimeStamp2.getTime());
-// console.log(myTimeStamp2-myTimeStamp1)
+//3.4.4//                 // Date.now() AUR new Date().getTime() LAGBHAG SAME TIMESTAMP DETE HAIN
+                          // EXECUTION TIME KI WAJAH SE THODA DIFFERENCE AA SAKTA HAI
+console.log(Date.now())
+let myTimeStamp= new Date()
+console.log(myTimeStamp.getTime());
 
 //3.4.4//TIMESTAMP KO DATE MEIN COVERT KARNA
 // let myTimeStamp =Date.now()
@@ -112,11 +111,16 @@
 
 
 //4// new Date() METHODS=>
-let newDate= new Date()
-console.log(newDate.getDate()) //11<= output:aaj ka date
-console.log(newDate.getDay())  //4<= output: Thursday hai aaj
-console.log(newDate.getFullYear()) //2026<= output
-console.log(newDate.getMonth()+1)  //6<= output: June hai... 0 se month start hota hai isliye +1
+// let newDate= new Date()
+
+// console.log(newDate.getDate()) //11<= output:aaj ka date
+
+//console.log(newDate.getDay())  // 4<=output 
+// getDay() WEEKDAY KA INDEX DETA HAI// 0=Sunday,1=Monday... 4=Thursday
+
+// console.log(newDate.getFullYear()) //2026<= output
+
+// console.log(newDate.getMonth()+1)  //6<= output: June hai... 0 se month start hota hai isliye +1
 
 
 

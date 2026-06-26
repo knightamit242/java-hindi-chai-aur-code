@@ -9,12 +9,23 @@
 
 // console.log(2==1)
 // console.log(2!=1)
-// console.log(2%1)
+// console.log(2%1) // returns remainder
 
 
 //2//
-//console.log("2">1)
-//console.log("02">1)
+// console.log("2">1)
+// console.log("02">1)
+
+//CONCEPT//
+// COMPARISON OPERATORS (>, <, >=, <=)
+// OFTEN STRINGS KO NUMBER ME CONVERT KAR DETE HAIN.
+
+// "2" > 1                         // "02" > 1
+// ↓                               // ↓
+
+// 2 > 1                           // 2 > 1
+// true                            // true
+
 
 
 //3//
@@ -33,9 +44,9 @@
 // console.log(undefined==0)
 // console.log(undefined<0)
 
-console.log("2"==2)// ye true dega kyoki double equal operator type conversion kr deta hai aur dono ko number me convert kr deta hai isliye ye true dega
+// console.log("2"==2)// ye true dega kyoki double equal operator type conversion kr deta hai aur dono ko number me convert kr deta hai isliye ye true dega
 
-console.log("2"===2)// ye false dega kyoki triple equal operator type conversion nhi krta hai aur dono ka type alag hai isliye ye false dega
+// console.log("2"===2)// ye false dega kyoki triple equal operator type conversion nhi krta hai aur dono ka type alag hai isliye ye false dega
 
 
 

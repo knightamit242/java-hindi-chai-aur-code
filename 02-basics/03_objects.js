@@ -32,7 +32,7 @@
 
 // **new** → NAYA OBJECT CREATE KARO.
 // **Object()** → OBJECT CONSTRUCTOR FUNCTION.
-// ANDAR JO OBJECT DIYA HAI, USI KO RETURN KAR DETA HAI.
+// Yaha Object() constructor naya object create karta hai
 
 // const user= new Object({
 //     name: "Amit",
@@ -48,7 +48,8 @@
 // new Object() → SINGLETON ... IS METHOD SE BANTE HAI TO USSE SINGELTON... EK HE OBJECT BANTA HAI
 // {}           → NON-SINGLETON   .... OBJECT LITERAL METHOD SE SINGELTON NHI BANTA HAI
 
-
+//Ye Chai aur Code wali terminology hai, practical JS me zyada use nahi hoti.
+// Agar notes me rakhna hai to theek hai, lekin isko JS rule mat samajhna.
 
 
 
@@ -58,19 +59,34 @@
 // const user= {
 //     "fullname":"AmitSingh",
 //     name: "Amit",
-//     "age": 22,   //AGE KO QUOTES MEIN LIKHO YA NA LIKHO... WO STRING HE RAHEGA
+//     age: 22,   //AGE KO QUOTES MEIN LIKHO YA NA LIKHO... WO STRING HE RAHEGA
 //     highSchoolPassAge: 15,
 //     "location": "Deoria",
 //     email: "singhamit79449@gmail.com",
 //     isLoggedIn: false
 // }
 
-// console.log(typeof user.isLoggedIn) //boolean
+// console.log(typeof user.isLoggedIn) //"boolean"
 // console.log(user.age)
 // console.log(user.highSchoolPassAge)
 // console.log(user.location)
-// console.log(typeof user.age)        //number
-// console.log(typeof user.highSchoolPassAge); //number
+// console.log(typeof user.age)        //"number"
+// console.log(typeof user.highSchoolPassAge); //"number"
+
+
+//4.01
+//ADDING KEY AND VALUE TO THE EXISTING OBJECT//
+
+// const user= {
+//     "fullname":"AmitSingh",
+//     "age": 22,   
+// }
+
+// user.location="Deoria"   // SIMPLE PROCESS TO ADD
+// console.log(user)         
+
+// console.log(user.location)  // LOCATION ACCESS HO JAYEGA
+
 
 
 //4.1//
@@ -96,6 +112,7 @@
 
 // // console.log(user.full name)// error dega
 // console.log(user["full name"]);  // []=> ISKA USE KROGE TO ERROR NHI DEGA
+
 
 
 //5// SYMBOL KO AS A SYMBOL PRINT KRNA
@@ -146,7 +163,7 @@
 
 // ACEES BHI AISE HE HOGA
 // console.log(user[mySym])     // YAHA BHI ye rha symbol HE DEGA ... LEKIN AB AS A SYMBOL TREAT HOGA
-// console.log(typeof mySym);  // AB Symbol DEGA... kyoki mySym symbol HAI
+// console.log(typeof mySym);  // AB "symbol" DEGA... kyoki mySym symbol HAI
 
 // console.log(user);  //*** SYMBOL... SYMBOL JAISE HE PRINT HOGA
 
@@ -158,7 +175,7 @@
 // const user= {
 //     "full name":"Amit Singh",
 //     name: "Amit",
-//     "age": 22,   //AGE KO QUOTES MEIN LIKHO YA NA LIKHO... WO STRING HE RAHEGA
+//     "age": 22,   
 //     highSchoolPassAge: 15,
 //     "location": "Deoria",
 //     email: "singhamit79449@gmail.com",
@@ -219,28 +236,30 @@
 
 //8// REFERING THROUGH STRING INTERPOLATION METHOD (`${}`)   OR TEMPLATE LITERAL BHI BOLTE HAI
 
-const user1 = {
-    name:"Amit Singh"
-}
+// const user1 = {
+//     name:"Amit Singh"
+// }
 
-user1.greeting = function(){       
-    console.log("hello user")     
-}                                  
+// user1.greeting = function(){       
+//     console.log("hello user")     
+// }                                  
 
-user1.greetingTwo= function()
-{
-    console.log(`hello my name is, ${this.name}`)
-    //  ${this.name} :means CURRENT OBJECT KE ANDAR JO name PROPERTY HAI USKI VALUE NIKALO
-    // CURRENT OBJECT MATLAB user1 ... USME JO name PROPERTY HAI USKO NIKALO 
-    // user1.name= Amit singh
-}
+// user1.greetingTwo= function()
+// {
+//     console.log(`hello my name is, ${this.name}`)
+//     //  ${this.name} :means CURRENT OBJECT KE ANDAR JO name PROPERTY HAI USKI VALUE NIKALO
+//     // CURRENT OBJECT MATLAB user1 ... USME JO name PROPERTY HAI USKO NIKALO 
+//     // user1.name= Amit singh
+// }
 
-console.log(user1.greeting())
-console.log(user1.greetingTwo())
+// console.log(user1.greeting())
+// console.log(user1.greetingTwo())
 
-//UNDEFINED ISLIYE AA RHA HAI KYOKI HUM KUCH RETURN NHI KR RHE HAI
+// //UNDEFINED ISLIYE AA RHA HAI KYOKI HUM KUCH RETURN NHI KR RHE HAI
 
 
              // POINT TO REMEMBER//
 //MOST IMP: MOSTLY DOT(.) METHOD WILL BE USED IN OBJECT FOR ACCESSING THE VALUE
             // ONLY ON EXCEPTION CASES, THEY WILL BE NOT USED//
+
+// SPECIAL CASES (SPACE WALI KEY, SYMBOL KEY, DYNAMIC KEY) ME BRACKET NOTATION USE HOTI HAI

@@ -1,17 +1,18 @@
 //1//
 const score= 400
-//console.log(score)  //YAHA SCORE KE ANDAR KUCH BHI AA SKTA HAI
-//console.log(typeof(score))
+// console.log(score)  //YAHA SCORE KE ANDAR KUCH BHI AA SKTA HAI
+// console.log(typeof(score))
 
-const anotherScore= new Number(100) //new se object ban gya
-//console.log(anotherScore)   // YAHA HAMNE BOL DIYA KI ANOTHER SCORE MEIN "NUMBER"  HE AAYEGA
-//console.log(typeof(anotherScore))
+// const anotherScore= new Number(100) //new se object ban gya
+// console.log(anotherScore)   // YAHA HAMNE BOL DIYA KI ANOTHER SCORE MEIN "NUMBER"  HE AAYEGA
+// console.log(typeof(anotherScore))
 
 //2//
+
 //console.log(score.toString()) //score se ek copy lega. original score mein koi changes nhi honge
 //console.log(typeof(score)) // score ka type dekhega.. wo abhi bhi number hai
 
-//console.log(typeof(score.toString())) 
+// console.log(typeof(score.toString())) 
 //=>=>=>=>=>=> "score.toString" mein toString ne jo value return ki hai uska type batayega//<=<=<=<=<=<=<=
 
 
@@ -45,8 +46,8 @@ const anotherScore= new Number(100) //new se object ban gya
 
 
 //3//
-const balance = new Number(100)
-//console.log(balance)
+// const balance = new Number(100)
+// console.log(balance)
 
 
 //4//
@@ -59,7 +60,7 @@ const someNumber=133
 
 //5//
 const ekNumber1=133
-// console.log(someNumber.toFixed(3))
+// console.log(ekNumber1.toFixed(3))
 
 
 //6//
@@ -78,7 +79,7 @@ const ekNumber1=133
 
 
 //7// 
-const hundreds=1000000
+// const hundreds=1000000
 // console.log(hundreds.toLocaleString())
 // console.log(hundreds.toLocaleString('en-IN'))
 
@@ -101,8 +102,8 @@ const hundreds=1000000
 
 // console.log(Math.abs(-465))
 
-//console.log(Math.round(23.33)) // =>round aur precise dono alag hai<=
-//console.log(Math.round(23.83)) //   ye bas integer value dega... decimal nhi
+// console.log(Math.round(23.33)) // =>round aur precise dono alag hai<=
+// console.log(Math.round(23.83)) //   ye bas integer value dega... decimal nhi
 // console.log(Math.round(23.6))
 // console.log(Math.round(-23.6))
 
@@ -140,13 +141,14 @@ const hundreds=1000000
 
 //6// Formula 
 
-const min=10
-const max=20
+// const min=10
+// const max=20
 
-console.log(Math.floor(Math.random()* (max-min)+min))// Output range: 10 se 19 integer value only
+// console.log(Math.floor(Math.random()* (max-min))+min)// Output range: 10 se 19 integer value only
 
 
-
+// MAX VALUE INCLUDE KARNI HO TO:
+// Math.floor(Math.random() * (max - min + 1)) + min
 
 
 
